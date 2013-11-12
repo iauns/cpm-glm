@@ -39,18 +39,15 @@ CPM_InitModule(${CPM_MODULE_NAME})
 # We manually download GLM into our source directory so the user can access
 # glm through 'glm/...'. There is no build step since this is a header only
 # library.
-ExternalProject_Add(${CPM_LIB_TARGET_NAME}
+CPM_EnsureRepoCurrent(
+  TARGET_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/glm"
   GIT_REPOSITORY "https://github.com/g-truc/glm.git"
   GIT_TAG "0.9.4.6"
-  PATCH_COMMAND ""
-  INSTALL_DIR ""
-  INSTALL_COMMAND ""
-  BUILD_IN_SOURCE 1
-)
+  )
 
 # Grab the source directory, that is where all of the library files
 # will reside. We will staically link against them.
 ExternalProject_Get_Property(${CPM_LIB_TARGET_NAME} SOURCE_DIR)
 
-CPM_ExportAdditionalIncludeDir("${SOURCE_DIR}")
+CPM_ExportAdditionalIncludeDir("${SOURCE_DIR}/3rdParty/glm")
 
