@@ -53,7 +53,7 @@ ExternalProject_Add(${GLM_EP_TARGET_NAME}
 
 # Grab the source directory, that is where all of the library files
 # will reside. We will staically link against them.
-ExternalProject_Get_Property(${MONGO_EP_TARGET_NAME} SOURCE_DIR)
+ExternalProject_Get_Property(${GLM_EP_TARGET_NAME} SOURCE_DIR)
 
 CPM_ExportAdditionalIncludeDir("${SOURCE_DIR}")
 
