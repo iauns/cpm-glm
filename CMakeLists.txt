@@ -39,7 +39,7 @@ CPM_InitModule(${CPM_MODULE_NAME})
 # We manually download GLM into our source directory so the user can access
 # glm through 'glm/...'. There is no build step since this is a header only
 # library.
-CPM_EnsureRepoCurrent(
+CPM_EnsureRepoIsCurrent(
   TARGET_DIR "${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/glm"
   GIT_REPOSITORY "https://github.com/g-truc/glm.git"
   GIT_TAG "0.9.4.6"
