@@ -47,8 +47,8 @@ CPM_EnsureRepoIsCurrent(
   )
 CPM_ExportAdditionalIncludeDir("${REPO_SOURCE_DIR}")
 
-file( GLOB_RECURSE GLM_HEADERS
-  ${REPO_SOURCE_DIR}/*.hpp
-)
-add_custom_target( ${CPM_TARGET_NAME} SOURCES ${GLM_HEADERS} )
+#file( GLOB_RECURSE GLM_HEADERS
+#  ${REPO_SOURCE_DIR}/*.hpp
+#)
+#add_custom_target( ${CPM_TARGET_NAME} SOURCES ${GLM_HEADERS} )
 
