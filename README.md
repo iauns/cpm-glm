@@ -1,6 +1,8 @@
 cpm-glm
 =======
 
+[![Build Status](https://travis-ci.org/iauns/cpm-glm.png)](https://travis-ci.org/iauns/cpm-glm)
+
 CPM module for g-truc's header-only OpenGL math library,
 [GLM](http://glm.g-truc.net).
 
