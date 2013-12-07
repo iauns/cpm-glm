@@ -49,6 +49,6 @@ CPM_ExportAdditionalIncludeDir("${REPO_SOURCE_DIR}")
 
 # Always enable GLM swizzling.
 if (NOT DEFINED CPM_GLM_NO_SWIZZLE)
-  CPM_ExportAdditionDefinition("-DGLM_SWIZZLE")
+  CPM_ExportAdditionalDefinition ("-DGLM_SWIZZLE")
 endif()
 
