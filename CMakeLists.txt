@@ -47,8 +47,17 @@ CPM_EnsureRepoIsCurrent(
   )
 CPM_ExportAdditionalIncludeDir("${REPO_SOURCE_DIR}")
 
-# Always enable GLM swizzling.
+# Enable a number of useful GLM options.
 if (NOT DEFINED CPM_GLM_NO_SWIZZLE)
-  CPM_ExportAdditionalDefinition ("-DGLM_SWIZZLE")
+  CPM_ExportAdditionalDefinition("-DGLM_SWIZZLE")
 endif()
+
+if (NOT DEFINED CPM_GLM_CPP11)
+  CPM_ExportAdditionalDefinition("-DGLM_FORCE_CXX03")
+endif()
+
+if (NOT DEFINED CPM_GLM_DEGREES)
+  CPM_ExportAdditionalDefinition("-DGLM_FORCE_RADIANS")
+endif()
+
 
