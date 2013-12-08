@@ -13,6 +13,6 @@ When using this module, the root of https://github.com/g-truc/glm.git is added
 to your include path. To access glm, add the following to your code:
 
 ```
-#include "glm/glm.hpp"
+#include <glm/glm.hpp>
 ```
 
