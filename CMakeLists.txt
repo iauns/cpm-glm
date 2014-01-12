@@ -44,6 +44,7 @@ CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${REPO_SOURCE_DIR}
   GIT_REPOSITORY "https://github.com/g-truc/glm.git"
   GIT_TAG "0.9.4.6"
+  USE_CACHING TRUE
   )
 CPM_ExportAdditionalIncludeDir("${REPO_SOURCE_DIR}")
 
